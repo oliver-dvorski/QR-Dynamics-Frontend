@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import NavBar from './components/Nav/NavBar'
-import Notification from './components/Notification'
+import NavBar from './Nav/NavBar'
+import Notification from './Notification'
 
 export default {
   components: { NavBar, Notification }
@@ -21,5 +21,3 @@ export default {
     svg
         fill: currentColor
 </style>
-
-<style src="./sass/app.sass" lang="sass"></style>
