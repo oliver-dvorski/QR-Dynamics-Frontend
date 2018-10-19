@@ -38,18 +38,18 @@
 </template>
 
 <style lang="sass" scoped >
-    .google
-        background: #ea4335
-        &:hover
-            background: #BC352B
-    .facebook
-        background: #4267b2
-        &:hover
-            background: #34538E
-    .github
-        background: #24292e
-        &:hover
-            background: #505358
+  .button.google
+    background: #ea4335
+    &:hover
+      background: #BC352B
+  .button.facebook
+    background: #4267b2
+    &:hover
+      background: #34538E
+  .button.github
+    background: #24292e
+    &:hover
+      background: #505358
 </style>
 
 <script>
