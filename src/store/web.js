@@ -58,7 +58,7 @@ export default {
       context.commit('loading', true, { root: true })
 
       let route = '/codes'
-      let response = await api.post(route, { ...code, api_token: context.rootGetters['auth/apiToken']})
+      let response = await api.post(route, { ...code, api_token: context.rootGetters['auth/apiToken'] })
       context.commit('new', response.data)
 
       context.commit('loading', false, { root: true })
@@ -68,7 +68,7 @@ export default {
       context.commit('loading', true, { root: true })
 
       let route = `/codes/${code.id}`
-      let response = await api.patch(route, { ...code, api_token: context.rootGetters['auth/apiToken']})
+      let response = await api.patch(route, { ...code, api_token: context.rootGetters['auth/apiToken'] })
       context.commit('update', response.data)
 
       context.commit('loading', false, { root: true })

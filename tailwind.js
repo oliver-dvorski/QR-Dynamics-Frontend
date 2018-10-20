@@ -211,7 +211,7 @@ module.exports = {
 
   fonts: {
     sans: [
-      'IBM Plex Sans',
+      'Cabin',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
