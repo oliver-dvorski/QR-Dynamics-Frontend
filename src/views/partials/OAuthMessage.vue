@@ -4,7 +4,7 @@
       Due to technical limitations of dynamic QR codes, you'll need an account to create one. For your convenience, QR Dyanmics supports OAuth so here's a couple of buttons:
     </p>
     <a
-      :href="`${appUrl}/login/google`"
+      :href="`${backendUrl}/login/google`"
       class="button raised my-2 flex w-64 text-center google"
       @click="$store.commit('loading', true)">
       <Icon
@@ -14,7 +14,7 @@
       Google
     </a>
      <a
-      :href="`${appUrl}/login/facebook`"
+      :href="`${backendUrl}/login/facebook`"
       class="button raised my-2 flex w-64 text-center facebook"
       @click="$store.commit('loading', true)">
       <Icon
@@ -24,7 +24,7 @@
       Facebook
     </a>
     <a
-      :href="`${appUrl}/login/github`"
+      :href="`${backendUrl}/login/github`"
       class="button raised my-2 flex w-64 text-center github"
       @click="$store.commit('loading', true)">
       <Icon

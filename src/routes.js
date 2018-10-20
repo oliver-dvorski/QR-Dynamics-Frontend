@@ -2,6 +2,11 @@ import views from './views/all'
 
 export default [
   {
+    path: '/set_token/:token',
+    component: views.login,
+    name: 'setToken'
+  },
+  {
     path: '/web',
     component: views.web,
     name: 'web'

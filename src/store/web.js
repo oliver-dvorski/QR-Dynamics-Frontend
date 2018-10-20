@@ -43,9 +43,12 @@ export default {
       }
       context.commit('loading', true, { root: true })
 
-      await context.dispatch('auth/fetchUser', {}, { root: true })
       let route = '/codes'
-      let response = await api.get(route)
+      let response = await api.get(route, {
+        params: {
+          api_token: context.rootGetters['auth/apiToken']
+        }
+      })
       context.commit('loadCodes', response.data.reverse())
 
       context.commit('loading', false, { root: true })
@@ -55,7 +58,7 @@ export default {
       context.commit('loading', true, { root: true })
 
       let route = '/codes'
-      let response = await api.post(route, code)
+      let response = await api.post(route, { ...code, api_token: context.rootGetters['auth/apiToken']})
       context.commit('new', response.data)
 
       context.commit('loading', false, { root: true })
@@ -65,7 +68,7 @@ export default {
       context.commit('loading', true, { root: true })
 
       let route = `/codes/${code.id}`
-      let response = await api.patch(route, code)
+      let response = await api.patch(route, { ...code, api_token: context.rootGetters['auth/apiToken']})
       context.commit('update', response.data)
 
       context.commit('loading', false, { root: true })
@@ -75,7 +78,7 @@ export default {
       context.commit('loading', true, { root: true })
 
       let route = `/codes/${code.id}`
-      let response = await api.delete(route, code)
+      let response = await api.delete(route, { params: { api_token: context.rootGetters['auth/apiToken'] } })
       context.commit('delete', response.data)
 
       context.commit('loading', false, { root: true })
