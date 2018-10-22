@@ -90,8 +90,9 @@ export default {
       }
     }
   },
-  mounted () {
-    this.$store.dispatch('web/fetchCodeList')
+  async mounted () {
+    await this.$store.dispatch('auth/fetchUser')
+    await this.$store.dispatch('web/fetchCodeList')
   }
 }
 </script>

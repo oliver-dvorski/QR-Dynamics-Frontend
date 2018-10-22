@@ -37,7 +37,6 @@ export default {
   },
   actions: {
     async fetchCodeList (context) {
-      await context.dispatch('auth/fetchUser', {}, { root: true })
       if (context.rootGetters['auth/user'] === false) {
         return
       }
