@@ -17,7 +17,7 @@ Vue.mixin({
         return process.env.VUE_APP_BACKEND_URL
       },
       get shortCodeLocation () {
-        return process.env.VUE_APP_SHOT_CODE_LOCATION
+        return process.env.VUE_APP_SHORT_CODE_LOCATION
       },
       apiToken: ''
     }
