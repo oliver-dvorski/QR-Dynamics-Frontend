@@ -126,10 +126,10 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-    canvas
-        width: 350px
-        max-width: 100%
-    button.big
-        width: 350px
-        max-width: 100%
+  canvas
+    width: 350px
+    max-width: 100%
+  button.big
+    width: 350px
+    max-width: 100%
 </style>

@@ -142,12 +142,12 @@ export default {
 </script>
 
 <style lang="sass">
-    .dynamic-code-list
-        display: grid
-        grid-gap: 1rem
-        margin: 2rem 0
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  .dynamic-code-list
+    display: grid
+    grid-gap: 1rem
+    margin: 2rem 0
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
-        .list-item
-            transition: box-shadow .3s
+    .list-item
+      transition: box-shadow .3s
 </style>

@@ -18,6 +18,6 @@ export default {
 </script>
 
 <style lang="sass">
-    svg
-        fill: currentColor
+  svg
+    fill: currentColor
 </style>
