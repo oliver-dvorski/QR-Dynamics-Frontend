@@ -13,10 +13,7 @@ import NavBar from './components/Nav/NavBar'
 import Notification from './components/Notification'
 
 export default {
-  components: { NavBar, Notification },
-  mounted () {
-    console.log('MOUNTED')
-  }
+  components: { NavBar, Notification }
 }
 </script>
 
