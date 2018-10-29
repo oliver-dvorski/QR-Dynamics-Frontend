@@ -40,6 +40,13 @@ export default {
       type: String,
       default: ''
     }
+  },
+  mounted () {
+    document.addEventListener('keyup', (e) => {
+      if (this.show && e.key === 'Escape') {
+        this.$emit('close')
+      }
+    })
   }
 }
 </script>
